@@ -5,6 +5,7 @@ authors:
     given-names: "Sana"
 title: "KinaseDock-3D: EGFR–Erlotinib Docking, MD, and RAMD Dissociation Pilot"
 version: 1.0.0
+doi: 10.5281/zenodo.24134746
 type: software
 license: MIT
 repository-code: "https://github.com/sanatat/KinaseDock-3D"
