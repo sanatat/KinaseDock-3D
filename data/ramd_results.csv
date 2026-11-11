@@ -1,0 +1,6 @@
+system,force_kJ_mol_nm,seed,start_step,exit_step,last_log_step,observed_ps,status,final_min_distance_A,final_contacts_lt_4A,final_contacts_lt_10A,log_path
+WT,600,42,550000,643000,643001,186.0,exit_event,15.166,0,,results/kinetics/gpu_y700/WT/ramd_pilot_600/pilot_retry.log
+T790M,600,42,550000,556500,556501,13.0,exit_event,12.776,0,,results/kinetics/gpu_y700/T790M/ramd_pilot_600/pilot_retry.log
+T790M,400,42,550000,577200,577201,54.4,exit_event,16.076,0,,results/kinetics/gpu_y700/T790M/ramd_calib_F400_seed42/calib.log
+WT,300,42,550000,,750000,400.0,no_exit_observed,3.134,65,4398,results/kinetics/gpu_y700/WT/ramd_calib_F300_seed42/calib.log
+T790M,300,42,550000,667150,667151,234.3,exit_event,9.374,0,3,results/kinetics/gpu_y700/T790M/ramd_calib_F300_seed42/calib.log
