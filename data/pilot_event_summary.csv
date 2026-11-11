@@ -1,0 +1,6 @@
+system,force_kJ_mol_nm,seed,start_step,exit_step,time_ps,status
+WT,600,42,550000,643000,186.0,exit_event
+T790M,600,42,550000,556500,13.0,exit_event
+T790M,400,42,550000,577200,54.4,exit_event
+WT,300,42,550000,,400.0,right_censored
+T790M,300,42,550000,667150,234.3,exit_event
