@@ -12,6 +12,24 @@ This project documents a practical workflow for **molecular docking, explicit-so
 - **MD:** Amber-family protein parameters, GAFF2/AM1-BCC ligand parameters, TIP3P water, approximately 0.15 M salt, minimized and equilibrated WT/T790M systems followed by 1-ns unrestrained CUDA-accelerated GROMACS MD.
 - **RAMD:** HITS-MCM [GROMACS-RAMD](https://github.com/HITS-MCM/gromacs-ramd) development build, force calibration, exit-event parsing, right-censored observations, PBC-aware atom-contact checks and checkpoint validation.
 
+## Research relevance: computational kinase drug discovery
+
+This project demonstrates **computational chemistry and structure-based drug discovery** methods in a **protein kinase / kinase inhibitor** case study. EGFR (epidermal growth factor receptor) and the ATP-site inhibitor erlotinib provide a concrete model for evaluating **protein–ligand interactions**, **ligand binding-pocket dynamics**, **molecular docking**, **molecular dynamics simulations**, and **force-assisted ligand dissociation pathways**.
+
+| Demonstrated skill / keyword | Evidence in this pilot |
+|:--|:--|
+| **Molecular docking; structure-based modeling; kinase inhibitors** | AutoDock Vina multi-seed erlotinib redocking to EGFR crystal structure 1M17 and pose RMSD checks |
+| **Computational chemistry; structural biology; protein kinases** | EGFR WT/T790M structure preparation, force-field setup, solvated molecular dynamics |
+| **Protein–ligand interactions; ligand binding** | Heavy-atom contact counts, minimum distances, aligned ligand RMSD and structural QC |
+| **Binding kinetics methodology; dissociation pathways; enhanced sampling** | GROMACS-RAMD force sweep, event detection, PBC checks and right-censored trajectory reporting |
+| **Python programming; scientific data analysis; reproducible visualization** | CSV-based analysis and Matplotlib plotting script in `scripts/`; original MD/RAMD plots in `figures/` |
+| **Drug-resistance context; mutation-aware comparison** | EGFR WT compared with single T790M as a methodological case study **without** validated resistance prediction |
+| **Open-science documentation and data provenance** | Public event-summary CSV, code, QC figures, methods and explicit limitations; **not** a fully FAIR-curated benchmark |
+
+**Important scope distinction:** This pilot uses an **ATP-binding-site inhibitor**. It does **not** implement allosteric modulation, polypharmacology prediction, non-ATP kinase-interface design, peptide/peptidomimetic design, deep learning, PyTorch, RDKit descriptor pipelines, trained resistance-prediction models, or decision-support dashboards. Those topics are scientifically relevant to future kinase-drug-discovery work, but listing them as completed results here would be inaccurate.
+
+The **RAMD exit times are force-biased methodological observations**, not unbiased ligand residence times or experimentally validated `koff` estimates. Original docking/MD input and trajectory files are not yet fully deposited, so atomistic reproducibility remains limited.
+
 ## Pilot RAMD results (seed 42)
 
 | EGFR system | Applied RAMD force (kJ mol⁻¹ nm⁻¹) | Observed RAMD time (ps) | Interpretation |
