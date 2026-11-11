@@ -1,0 +1,33 @@
+# Simulation trajectories, checkpoints, binaries, and huge raw data
+*.xtc
+*.trr
+*.cpt
+*.tpr
+*.edr
+*.gro
+*.pdbqt
+*.dcd
+*.nc
+*.h5
+*.hdf5
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.log
+*.bak
+# Python and local environments
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+science/
+.env
+.env.*
+*.key
+*.pem
+# Workstation-only bulky GROMACS directories
+tools/
+results/kinetics/gpu_y700/
+results/kinetics/ramd_prep/
