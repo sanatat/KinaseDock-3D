@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research software pilot, please cite the repository version."
+authors:
+  - family-names: "Tat"
+    given-names: "Sana"
+title: "KinaseDock-3D: EGFR–Erlotinib Docking, MD, and RAMD Dissociation Pilot"
+version: 1.0.0
+type: software
+license: MIT
+repository-code: "https://github.com/sanatat/KinaseDock-3D"
+keywords:
+  - EGFR
+  - erlotinib
+  - docking
+  - molecular dynamics
+  - RAMD
+  - ligand dissociation
