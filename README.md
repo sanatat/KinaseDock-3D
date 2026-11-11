@@ -81,4 +81,7 @@ For scientific interpretation see [Methods](docs/METHODS.md), [Data provenance](
 
 ## Citation and release
 
+**Published GitHub release:** [v1.0.0 — EGFR Docking, MD & RAMD](https://github.com/sanatat/KinaseDock-3D/releases/tag/v1.0.0). **Zenodo DOI:** not yet independently verified; will be added once the Zenodo record is confirmed.
+
+
 Maintainer: **Sana Tat**. See [`CITATION.cff`](CITATION.cff). This is a **research-software / computational pilot**, not a peer-reviewed article. A Zenodo DOI should be inserted **only after** archiving an actual GitHub Release. [Publishing guide](docs/PUBLISH_GITHUB_ZENODO.md).
